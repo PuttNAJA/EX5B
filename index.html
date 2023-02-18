@@ -29,7 +29,8 @@
 		  <br><button type="button" class="btn btn-primary">Convert</button>
 		</form>
 	</div>
-	<div id="result" style="margin-top:10px;margin-left:10px; font-size: 20px; color:red;">
+	<div id="result" style="margin-top:10px;margin-left:10px; font-size: 20px; color:red;" >
+	<!---alert("Temperature is "+t1+" in "+u1); try to change alert box----> >
 	</div>
 	
 	<script>
@@ -52,7 +53,7 @@
 				}
 				function temperature_conversion(t){
 					var t1;
-			  	 var u1;
+			  	 	var u1;
 			   
 					if(u == "F"){
 							t1 = t * (9/5) + 32;
@@ -66,13 +67,11 @@
 					}
 				}
 
-
-
 				var check = validate(t);
 				if (check != null) return check;
 			   
 			   
-			   alert("Temperature is "+t1+" in "+u1);
+			   
 			});
 		});
 
